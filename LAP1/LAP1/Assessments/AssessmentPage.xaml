@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LAP1.AssessmentPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add Assessment" Activated="ToolbarItem_OnActivated"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Image  Source="g18.png"
+                    WidthRequest="{OnPlatform Android=175, iOS=225}"
+                    HorizontalOptions="Start"
+                    Margin="10,10,00,10"/>
+
+            <Label x:Name="courseLabel" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Start"
+                   Margin="5,10,00,5"  />
+
+            <ListView x:Name="assessmentView" ItemSelected="AssessmentView_OnItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                             <StackLayout Orientation="Horizontal" 
+                                          Margin="10,0,0,0">
+                                <Label Text="{Binding AssessmentTitle, StringFormat='{}{0:MM/dd/yyyy}'}"/>
+                                <Label Text="{Binding AssessmentStartDate, StringFormat='{}{0:MM/dd/yyyy}'}"/>
+                                <Label Text=" - "/>
+                                <Label Text="{Binding AssessmentEndDate, StringFormat='{}{0:MM/dd/yyyy}'}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

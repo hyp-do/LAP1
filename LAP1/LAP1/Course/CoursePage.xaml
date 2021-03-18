@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LAP1.CoursePage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Edit Course" Activated="ToolbarItem_OnActivated"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Image  Source="g18.png"
+                    WidthRequest="{OnPlatform Android=175, iOS=225}"
+                    HorizontalOptions="Start"
+                    Margin="10,10,00,10"/>
+
+            <ScrollView>
+                <StackLayout>
+                    <Label x:Name="courseName" FontSize="Large"  FontAttributes="Bold" 
+                           Margin="5,0,0,5"/>
+
+                    <!--<Label Text="Course Name" FontSize="Medium"  FontAttributes="Bold" 
+                           Margin="5,0,0,0"/>-->
+
+                    <!--<Label HorizontalOptions="Fill" 
+                           Margin="15,0,15,15"
+                           x:Name="courseName"/>-->
+
+                    <Label Text="Start Date" FontSize="Medium"  FontAttributes="Bold" 
+                           Margin="5,0,0,0"/>
+
+                    <Label HorizontalOptions="Fill" 
+                                Margin="15,0,15,15" 
+                                x:Name="startDateLabel"/>
+
+                    <Label Text="End Date" FontSize="Medium"  FontAttributes="Bold" 
+                           Margin="5,0,0,0"/>
+
+                    <Label HorizontalOptions="Fill" 
+                                Margin="15,0,15,15"
+                                x:Name="endDateLabel"/>
+
+                    <Label Text="Status" FontSize="Medium"  FontAttributes="Bold" 
+                           Margin="5,0,0,0" />
+
+                    <Label HorizontalOptions="Fill" FontSize="Medium" 
+                            Margin="15,0,15,15"
+                            x:Name="statusLabel">
+                    </Label>
+
+                    <Label Text="Instructor Information" FontSize="Large"  FontAttributes="Bold" 
+                           Margin="5,0,0,5" />
+
+                    <Label Text="Name" FontSize="Medium"  FontAttributes="Bold" 
+                           Margin="5,0,0,0" />
+
+                    <Label HorizontalOptions="Fill" 
+                           Margin="15,0,15,15"
+                           x:Name="nameLabel"/>
+
+                    <Label Text="Email" FontSize="Medium"  FontAttributes="Bold" 
+                           Margin="5,0,0,0"/>
+
+                    <Label HorizontalOptions="Fill" 
+                           Margin="15,0,15,15"
+                           x:Name="emailLabel"/>
+
+                    <Label Text="Phone#" FontSize="Medium"  FontAttributes="Bold" 
+                           Margin="5,0,0,0" />
+
+                    <Label HorizontalOptions="Fill" 
+                           Margin="15,0,15,15"
+                           x:Name="phoneLabel"/>
+
+                    <Grid Margin="0,15,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0"  Text="Course Notifications" FontSize="Medium"  FontAttributes="Bold" 
+                               Margin="5,0,0,0"/>
+
+                        <Switch Grid.Row="0" Grid.Column="1" 
+                                IsEnabled="False"
+                                x:Name="courseNotification"
+                                />
+
+                    </Grid>
+
+                    <StackLayout>
+
+                        <Button 
+             
+                            Text="Course Notes" TextColor="White" 
+                            BackgroundColor="#002f51"
+                            CornerRadius="10"
+                            Margin="10,30,10,5"
+                            x:Name="courseNotesButton"
+                            Clicked="CourseNotesButton_OnClicked" />
+                            
+
+                        <Button 
+             
+                            Text="Assessments" TextColor="White" 
+                            BackgroundColor="#002f51"
+                            CornerRadius="10"
+                            Margin="10,5,10,10"
+                            x:Name="assessmentsButton"
+                            Clicked="AssessmentsButton_OnClicked"/>
+
+                        <Button
+                            x:Name="dropCourseButton"
+                            Text ="Drop Course" TextColor="White" 
+                            BackgroundColor="DarkRed"
+                            CornerRadius="10"
+                            Margin="10,0,10,5"
+                            Clicked="DropCourseButton_OnClicked" />
+
+                    </StackLayout>
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

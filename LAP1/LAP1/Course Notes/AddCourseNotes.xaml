@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LAP1.AddCourseNotes">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image  Source="g18.png"
+                    WidthRequest="{OnPlatform Android=175, iOS=225}"
+                    HorizontalOptions="Start"
+                    Margin="10,10,00,10"/>
+
+            <Label x:Name="CourseLabel"  FontSize="Large"  FontAttributes="Bold" 
+                   Margin="5,0,0,5"/>
+
+            <Label x:Name="NoteTitleLabel" Text="Note Title" FontSize="Medium" FontAttributes="Bold"
+                   Margin="5,0,0,0" />
+
+            <Entry HorizontalOptions="Fill"
+                   Margin="15,0,15,15"
+                   x:Name="NoteTitleEntry" />
+
+            <Label x:Name="NoteDataLabel" Text="Enter Note"  FontSize="Medium"  FontAttributes="Bold" 
+                   Margin="5,0,0,0"/>
+
+            <Editor x:Name="NoteEditor" FontSize="Default" />
+
+            <StackLayout>
+
+                <Button 
+             
+                    Text="Save Note" TextColor="White" 
+                    BackgroundColor="#002f51"
+                    CornerRadius="10"
+                    Margin="10,30,10,10"
+                    x:Name="NoteSaveButton"
+                    Clicked="NoteSaveButton_OnClicked"/>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

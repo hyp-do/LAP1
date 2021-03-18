@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LAP1.EditAssessment">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image  Source="g18.png"
+                    WidthRequest="{OnPlatform Android=175, iOS=225}"
+                    HorizontalOptions="Start"
+                    Margin="10,10,00,10"/>
+
+            <Label Text="Add Assessment" FontSize="Large"  FontAttributes="Bold" 
+                   Margin="5,0,0,5"/>
+
+            <Label  Text="Assessment Title" FontSize="Medium"  FontAttributes="Bold"
+                    Margin="5,0,0,0"/>
+
+            <Entry HorizontalOptions="Fill"
+                   Margin="15,0,15,15"
+                   x:Name="assessmentTitle"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0"  Text="Objective Assessment" FontSize="Default"  FontAttributes="Bold" 
+                       Margin="5,0,0,0"/>
+
+                <Switch IsToggled="False"  Grid.Row="0" Grid.Column="1" 
+                        x:Name="oASwitch"
+                        Toggled="OASwitch_OnToggled"
+                        />
+
+                <Label Grid.Column="0" Grid.Row="1" Text="Performance Assessment" FontSize="Default"  FontAttributes="Bold" HorizontalOptions="FillAndExpand"
+                       Margin="5,0,0,0"/>
+
+                <Switch IsToggled="false" Grid.Row="1" Grid.Column="1"
+                        x:Name="pASwitch"
+                        Toggled="PASwitch_OnToggled"/>
+
+            </Grid>
+
+
+            <Label  Text="Start Date" FontSize="Medium"  FontAttributes="Bold" 
+                    Margin="5,0,0,0"/>
+
+            <DatePicker HorizontalOptions="Fill"
+                        Margin="15,0,15,15"
+                        x:Name="assessmentStartDate"/>
+
+            <Label  Text="End Date" FontSize="Medium"  FontAttributes="Bold" 
+                    Margin="5,0,0,0"/>
+
+            <DatePicker HorizontalOptions="Fill"
+                        Margin="15,0,15,15"
+                        x:Name="assessmentEndDate"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0" Text="Assessment Notifications" FontSize="Default"  FontAttributes="Bold" HorizontalOptions="FillAndExpand"
+                       Margin="5,0,0,0"/>
+                <Switch Grid.Column="1" Grid.Row="0" IsToggled="false" HorizontalOptions="EndAndExpand"
+                        x:Name="assessmentNotifications"/>
+
+
+            </Grid>
+
+            <StackLayout>
+
+                <Button 
+             
+                    Text="Save" TextColor="White" 
+                    BackgroundColor="#002f51"
+                    CornerRadius="10"
+                    Margin="10,30,10,10"
+                    x:Name="EditAssessmentSaveButton"
+                    Clicked="EditAssessmentSaveButton_OnClicked"
+                />
+
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

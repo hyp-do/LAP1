@@ -1,0 +1,34 @@
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\bin\Debug\netstandard2.0\LAP1.deps.json
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\bin\Debug\netstandard2.0\LAP1.dll
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\bin\Debug\netstandard2.0\ref\LAP1.dll
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\bin\Debug\netstandard2.0\LAP1.pdb
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\LAP1.csprojAssemblyReference.cache
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\Assessments\AddAssessment.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\Assessments\AssessmentPage.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\Assessments\DisplayAssessment.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\Assessments\EditAssessment.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\Course Notes\AddCourseNotes.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\Course Notes\CourseNotesPage.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\Course Notes\DisplayCourseNotes.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\Course Notes\EditCourseNotes.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\Course\AddCourse.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\Course\CoursePage.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\Course\EditCourse.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\PersonalNotes\AddPersonalNotes.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\PersonalNotes\DisplayPersonalNotes.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\PersonalNotes\EditPersonalNotes.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\PersonalNotes\PersonalNotesPage.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\Term\AddTermPage.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\Term\EditTermPage.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\Term\MainPage.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\Term\TermPage.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\Term\TermReport.xaml.g.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\LAP1.AssemblyInfoInputs.cache
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\LAP1.AssemblyInfo.cs
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\LAP1.csproj.CoreCompileInputs.cache
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\LAP1.dll
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\ref\LAP1.dll
+C:\Users\James\source\repos\LAP1\LAP1\LAP1\obj\Debug\netstandard2.0\LAP1.pdb

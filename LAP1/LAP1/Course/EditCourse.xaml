@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LAP1.EditCourse">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+            <Image  Source="g18.png"
+                    WidthRequest="{OnPlatform Android=175, iOS=225}"
+                    HorizontalOptions="Start"
+                    Margin="10,10,00,10"/>
+            
+        </StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Add Course" FontSize="Large"  FontAttributes="Bold" 
+                           Margin="5,0,0,5"/>
+
+                    <Label Text="Course Name" FontSize="Medium"  FontAttributes="Bold" 
+                           Margin="5,0,0,0"/>   
+
+                    <Entry HorizontalOptions="Fill" 
+                           Margin="15,0,15,15"
+                           x:Name="courseName"/>
+
+                    <Label Text="Start Date" FontSize="Medium"  FontAttributes="Bold" 
+                           Margin="5,0,0,0"/>
+
+                    <DatePicker HorizontalOptions="Fill" 
+                                Margin="15,0,15,15" 
+                                x:Name="courseStartDate"/>
+
+                    <Label Text="End Date" FontSize="Medium"  FontAttributes="Bold" 
+                           Margin="5,0,0,0"/>
+
+                    <DatePicker HorizontalOptions="Fill" 
+                                Margin="15,0,15,15"
+                                x:Name="courseEndDate"/>
+                    
+                    <Label Text="Status" FontSize="Medium"  FontAttributes="Bold" 
+                           Margin="5,0,0,0" />
+
+                    <Picker HorizontalOptions="Fill" FontSize="Medium" 
+                            Margin="15,0,15,15"
+                            x:Name="courseStatus">
+                        <Picker.Items>
+                            <x:String>Active</x:String>
+                            <x:String>Inactive</x:String>
+                            <x:String>Completed</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Label Text="Instructor Information" FontSize="Large"  FontAttributes="Bold" 
+                           Margin="5,0,0,5" />
+
+                    <Label Text="Name" FontSize="Medium"  FontAttributes="Bold" 
+                           Margin="5,0,0,0" />
+
+                    <Entry HorizontalOptions="Fill" 
+                           Margin="15,0,15,15"
+                           x:Name="instructorName"/>
+
+                    <Label Text="Email" FontSize="Medium"  FontAttributes="Bold" 
+                           Margin="5,0,0,0"/>
+
+                    <Entry HorizontalOptions="Fill" 
+                           Margin="15,0,15,15"
+                           x:Name="instructorEmail"/>
+
+                    <Label Text="Phone#" FontSize="Medium"  FontAttributes="Bold" 
+                           Margin="5,0,0,0" />
+
+                    <Entry HorizontalOptions="Fill" 
+                           Margin="15,0,15,15"
+                           x:Name="instructorPhone"/>
+
+                    <Grid Margin="0,15,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0"  Text="Course Notifications" FontSize="Medium"  FontAttributes="Bold" 
+                               Margin="5,0,0,0"/>
+
+                        <Switch Grid.Row="0" Grid.Column="1" 
+                                
+                                x:Name="courseNotification"
+                        />
+
+                    </Grid>
+
+                    <StackLayout>
+
+                        <Button 
+             
+                            Text="Save" TextColor="White" 
+                            BackgroundColor="#002f51"
+                            CornerRadius="10"
+                            Margin="10,30,10,10"
+                            x:Name="courseSave"
+                            Clicked="CourseSave_OnClicked"/>
+
+                    </StackLayout>
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

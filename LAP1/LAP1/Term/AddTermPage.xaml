@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Add Term"
+             x:Class="LAP1.AddTermPage">
+
+    <StackLayout>
+
+        <Image  Source="g18.png"
+                WidthRequest="{OnPlatform Android=175, iOS=225}"
+                HorizontalOptions="Start"
+                Margin="10,10,00,10"/>
+
+        <Label Text="Add Term" FontSize="Large"  FontAttributes="Bold" 
+               Margin="5,0,0,5"/>
+
+        <Label  Text="Term Title" FontSize="Medium"  FontAttributes="Bold" 
+                Margin="10,0,0,0"/>
+
+        <Entry HorizontalOptions="Fill" 
+               Margin="15,0,15,15"
+               x:Name="termTitle"/>
+
+        <Label 
+               Text="Begin Date" FontSize="Medium" FontAttributes="Bold"
+               Margin="10,0,0,0"/>
+
+        <DatePicker HorizontalOptions="Fill"
+                    Margin="15,0,15,15"
+                    x:Name="termBeginDate"/>
+
+        <Label  Text="End Date" FontSize="Medium" FontAttributes="Bold"
+                Margin="10,0,0,0"/>
+        <DatePicker HorizontalOptions="Fill" 
+                    Margin="15,0,15,15"
+                    x:Name="termEndDate"/>
+
+        <StackLayout>
+        <Button 
+            Text="Save" TextColor="White" 
+            BackgroundColor="#002f51"
+            CornerRadius="10"
+            Margin="10,30,10,10"
+            x:Name="termSaveButton"
+            Clicked="TermSave_OnClicked"/>
+        </StackLayout>
+    </StackLayout>
+
+
+</ContentPage>

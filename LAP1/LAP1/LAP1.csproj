@@ -1,0 +1,110 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <PackageReference Include="Xam.Plugins.Notifier" Version="3.0.1" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1687" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Assessments\AssessmentPage.xaml.cs">
+      <DependentUpon>AssessmentPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Course Notes\AddCourseNotes.xaml.cs">
+      <DependentUpon>AddCourseNotes.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Course Notes\DisplayCourseNotes.xaml.cs">
+      <DependentUpon>DisplayCourseNotes.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Course Notes\EditCourseNotes.xaml.cs">
+      <DependentUpon>EditCourseNotes.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="PersonalNotes\AddPersonalNotes.xaml.cs">
+      <DependentUpon>AddPersonalNotes.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="PersonalNotes\DisplayPersonalNotes.xaml.cs">
+      <DependentUpon>DisplayPersonalNotes.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="PersonalNotes\EditPersonalNotes.xaml.cs">
+      <DependentUpon>EditPersonalNotes.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="PersonalNotes\PersonalNotesPage.xaml.cs">
+      <DependentUpon>PersonalNotesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Course\EditCourse.xaml.cs">
+      <DependentUpon>EditCourse.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Course\CoursePage.xaml.cs">
+      <DependentUpon>CoursePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Term\TermPage.xaml.cs">
+      <DependentUpon>TermPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Course Notes\CourseNotesPage.xaml.cs">
+      <DependentUpon>CourseNotesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Term\EditTermPage.xaml.cs">
+      <DependentUpon>EditTermPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Term\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Assessments\AddAssessment.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Course\AddCourse.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Assessments\EditAssessment.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Assessments\DisplayAssessment.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="LoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Course Notes\EditCourseNotes.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Course Notes\AddCourseNotes.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Course Notes\CourseNotesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Term\TermReport.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Term\AddTermPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Assessments\AssessmentPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Course\CoursePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Term\TermPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Course Notes\DisplayCourseNotes.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

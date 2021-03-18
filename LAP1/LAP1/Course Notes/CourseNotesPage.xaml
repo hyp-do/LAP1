@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LAP1.CourseNotesPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add Note" Activated="ToolbarItem_OnActivated"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Image  Source="g18.png"
+                    WidthRequest="{OnPlatform Android=175, iOS=225}"
+                    HorizontalOptions="Start"
+                    Margin="10,10,00,10"/>
+
+            <Label x:Name="noteLabel" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Start"
+                   Margin="5,10,00,5" />
+
+            <ListView x:Name="notesView" ItemSelected="NotesView_OnItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding NotesTitle}" TextColor="Black"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

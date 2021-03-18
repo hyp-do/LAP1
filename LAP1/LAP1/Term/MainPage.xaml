@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="WGU Terms"
+             x:Class="LAP1.MainPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Order="Secondary" Text="Personal Notes" Activated="Notes_OnClicked"/>
+        <ToolbarItem Text="Add Term" Activated="AddTerm_OnClicked"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout>
+
+        <Image  Source="g18.png"
+                WidthRequest="{OnPlatform Android=175, iOS=225}"
+               HorizontalOptions="Start"
+               Margin="10,10,00,10"/>
+
+        <Entry HorizontalOptions="Fill" 
+               Margin="15,0,15,15"
+               TextChanged="TermSearchEntry_OnTextChanged"
+               x:Name="TermSearchEntry"
+               Placeholder="Search by Term Name..."/>
+
+        <ListView x:Name="termView" 
+                  ItemTapped="TermView_OnItemTapped"
+                  ItemSelected="TermView_OnItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <!--<TextCell Text="{Binding TermTitle}" TextColor="Black" />-->
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" 
+                                     Margin="10,0,0,0">
+                            <Label Text="{Binding TermTitle, StringFormat='{}{0:MM/dd/yyyy}'}"/>
+                            <Label Text="{Binding TermStartDate, StringFormat='{}{0:MM/dd/yyyy}'}"/>
+                            <Label Text=" - "/>
+                            <Label Text="{Binding TermEndDate, StringFormat='{}{0:MM/dd/yyyy}'}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <!--<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand">
+            <Button 
+                x:Name="addTermButton"
+                Text="Add Term" TextColor="White" 
+                 BackgroundColor="#002f51"
+                CornerRadius="10"
+                Margin="0,0,0,10"
+                Clicked="AddTerm_OnClicked"/>-->
+        <!--<Button
+                x:Name="deleteTermButton"
+                Text ="Delete Term" TextColor="White" 
+                BackgroundColor="DarkRed"
+                CornerRadius="10"
+                Margin="0,0,0,10"
+                Clicked="DeleteTerm_OnClicked"/>-->
+        <!--</StackLayout>-->
+</StackLayout>
+
+</ContentPage>

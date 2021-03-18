@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LAP1.LoginPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="SGU University Student Log In"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    Margin="0,10,0,150"/>
+
+            <Label Text="Student ID" 
+                   FontSize="Medium" FontAttributes="Bold"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"
+                   Margin="75,0,0,0"/>
+            
+            <Entry x:Name="StudentIdEntry"
+                   Placeholder="Enter Student ID"
+                   Margin="75,0,100,0"/>
+
+            <Label Text="Password" 
+                   FontSize="Medium" FontAttributes="Bold"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"
+                   Margin="75,0,0,0"/>
+
+
+            <Entry x:Name="StudentPasswordEntry"
+                   Placeholder="Enter Password"
+                   Margin="75,0,100,0"/>
+
+            <StackLayout>
+                <Button 
+                    x:Name="LoginButton"
+                    Text="Login" TextColor="White" 
+                    BackgroundColor="#002f51"
+                    CornerRadius="10"
+                    Margin="50,25,50,5"
+                    Clicked="LoginButton_OnClicked"
+                    />
+
+                <!-- <Button -->
+                <!--     x:Name="DeleteNotesButton" -->
+                <!--     Text ="Delete Note" TextColor="White"  -->
+                <!--     BackgroundColor="DarkRed" -->
+                <!--     CornerRadius="10" -->
+                <!--     Margin="10,0,10,5" -->
+                <!--     Clicked="DeleteNotesButton_OnClicked" /> -->
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
